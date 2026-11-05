@@ -21,7 +21,7 @@ You keep doing documents, code and conversation. RelVectors does the computer it
 
 Ask the owner first; installing is the owner's decision.
 
-1. Download the package for this system from https://github.com/myt98644-cyber/relvectors-releases/releases
+1. Download the package for this system from https://github.com/relvectors/relvectors-releases/releases
    (Windows x64/ARM64, macOS Apple silicon/Intel, Linux x86_64/ARM64; files ending in `-en` are English).
 2. Unpack it and run `sh install.sh` (macOS / Linux) or `install.cmd` (Windows). No Python or internet needed.
    RelVectors starts in the background; `rv` is on the user's PATH afterwards.
@@ -94,4 +94,4 @@ and pair it once; RelVectors can then hand you jobs over A2A. Two-way interactio
 4. **One task at a time.** If a task is still open, finish or abandon it before giving a new one.
 5. **Cleanup is the owner's choice.** A disk scan lists items and sizes; the owner decides what is cleaned.
 
-Project page and downloads: https://github.com/myt98644-cyber/relvectors-releases
+Project page and downloads: https://github.com/relvectors/relvectors-releases

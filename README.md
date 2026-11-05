@@ -122,7 +122,7 @@ Full guide: **[AGENTS.md](AGENTS.md)** · machine-readable index: **[llms.txt](l
 
 ## Download
 
-Get the package for your system under **[Releases](https://github.com/myt98644-cyber/relvectors-releases/releases)**.
+Get the package for your system under **[Releases](https://github.com/relvectors/relvectors-releases/releases)**.
 English packages end in **`-en`**:
 
 | System | File |

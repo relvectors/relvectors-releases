@@ -6,15 +6,15 @@
 > irreversible ones wait for the owner's approval. Works offline with a local AI model. AI agents connect over MCP or A2A.
 
 ## For AI agents
-- [AGENTS.md](https://github.com/myt98644-cyber/relvectors-releases/blob/main/AGENTS.md): what agents get, how to install, MCP tools, the A2A endpoint and Agent Card, rules
+- [AGENTS.md](https://github.com/relvectors/relvectors-releases/blob/main/AGENTS.md): what agents get, how to install, MCP tools, the A2A endpoint and Agent Card, rules
 - MCP: `rv mcp --agent <your name>` (stdio). Claude Code: `claude mcp add relvectors -- rv mcp --agent claude-code`
 - A2A: Agent Card at `http://127.0.0.1:<port>/.well-known/agent-card.json`; JSON-RPC `message/send` at `/a2a` with the local token from `rvd.json`
 - Command line: `rv --json status`, `rv --json findings`, `rv --json tasks`
 
 ## For people
-- [README (English)](https://github.com/myt98644-cyber/relvectors-releases/blob/main/README.md): features, download, install, trial
-- [README (中文)](https://github.com/myt98644-cyber/relvectors-releases/blob/main/README.zh-CN.md)
-- [Downloads](https://github.com/myt98644-cyber/relvectors-releases/releases): installers for six platforms, Chinese and English (`-en`)
+- [README (English)](https://github.com/relvectors/relvectors-releases/blob/main/README.md): features, download, install, trial
+- [README (中文)](https://github.com/relvectors/relvectors-releases/blob/main/README.zh-CN.md)
+- [Downloads](https://github.com/relvectors/relvectors-releases/releases): installers for six platforms, Chinese and English (`-en`)
 
 ## Features
 - Rejuvenate: system cleanup (caches, Trash, old installers, large downloads) with a checklist, then a speed test. Not a reinstall.

@@ -105,7 +105,7 @@ RelVectors 是第一个为机器本身打造的 agent：别的 agent 替人做�
 
 ## 下载
 
-在 **[Releases](https://github.com/myt98644-cyber/relvectors-releases/releases)** 下载对应系统的安装包（文件名不带 `-en` 的是中文版）：
+在 **[Releases](https://github.com/relvectors/relvectors-releases/releases)** 下载对应系统的安装包（文件名不带 `-en` 的是中文版）：
 
 | 系统 | 文件 |
 |---|---|
