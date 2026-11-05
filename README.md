@@ -1,76 +1,165 @@
-# RelVectors —— AI 工程师
+# RelVectors — Your Computer's AI Engineer
 
-[English](README.en.md)
+**English** | [中文](README.zh-CN.md)
 
-RelVectors 常驻在你的电脑上，像一位随叫随到的工程师：持续读取这台机器的真实读数，和它自己的历史比较，
-发现问题先复测确认，只在需要你时才打扰你。改动电脑的每一步都经过授权：只读的直接做，可撤销的按规则做，
-不可撤销的一定先问你。
+**RelVectors is an AI engineer that lives on your computer.** It keeps an eye on your PC or Mac around the clock, notices
+problems before you do, and fixes them when you ask: cleans up disk space, finds what slows your computer down, keeps it
+from overheating, checks for suspicious programs, and looks after other computers for you. Just tell it what you want in
+plain words. It does the work, shows you the result, and asks you only when a decision is really yours.
 
-## 六大功能
-
-| 功能 | 做什么 |
-|---|---|
-| 返老还童 | 找出拖慢和占地方的东西，清理（可撤销）、更新软件，再测速，和这台机器最早的结果比较 |
-| 延年益寿 | 跟踪硬盘健康与寿命、电池、热压力和备份，趋势变差时提前提醒 |
-| 潜力爆涨 | 测硬盘和处理器的真实能力，找出瓶颈，内存够时部署本地模型 |
-| 挖掘宝藏 | 找出可回收的空间、可更新的软件、闲置的处理器和内存 |
-| 远程出差 | 到别的机器上替你办事：与其他 RelVectors 配对协作、SSH 远程检查、把事情交给其他 agent |
-| 保驾护航 | 探测正在运行的进程，找出不安全因素：可疑位置启动的程序、对外开放的端口、占满处理器的未知程序，再查防火墙、加密和安全更新 |
-
-另有：网页客户端（仪表、任务对话、设置）、端云混合模型（本地优先，云端有预算，个人内容默认不出机器）、
-常驻低功耗巡检、硬盘 SMART 健康（安装包已内置 smartctl）。
-
-## 下载
-
-在右侧 **Releases** 下载对应系统的安装包（文件名带 `-en` 的是英文版）：
-
-| 系统 | 文件 |
-|---|---|
-| macOS（Apple 芯片） | `RelVectors-<版本>-mac-arm64.tar.gz` |
-| macOS（Intel） | `RelVectors-<版本>-mac-x64.tar.gz` |
-| Windows 10 / 11（x64） | `RelVectors-<版本>-windows-x64.zip` |
-| Windows（ARM） | `RelVectors-<版本>-windows-arm64.zip` |
-| Linux（x86_64） | `RelVectors-<版本>-linux-x64.tar.gz` |
-| Linux（ARM64） | `RelVectors-<版本>-linux-arm64.tar.gz` |
-
-安装包自带运行环境，**不需要另装 Python 或其他依赖**，安装过程不联网。
-Linux 需要 glibc 2.28 及以上（Ubuntu 20.04+、Debian 10+、RHEL / Rocky 8+ 等）。
-每个版本附 `SHA256SUMS.txt`，可以核对下载是否完整。
-
-## 安装
-
-- **macOS**：解压后右键点“安装.command”→ 打开（安装包尚未经 Apple 公证，首次需要右键）；
-  或在终端进入解压后的文件夹运行 `sh install.sh`。
-- **Windows**：解压后双击 `install.cmd`。如果出现“Windows 已保护你的电脑”，点“更多信息 → 仍要运行”。
-- **Linux**：解压后在终端运行 `sh install.sh`。
-
-装好后会自动打开浏览器里的客户端，之后也可以随时运行 `rv console`。登录后自动在后台运行，普通用户权限。
-需要读取硬盘 SMART 等管理员数据时，按提示运行一次 `sudo rv exec install`（Windows 在“以管理员身份运行”的终端里运行 `rv exec install`）。
-
-卸载：运行安装文件夹里的 `uninstall.sh` / `uninstall.cmd`（保留数据）。
-
-## 试用与激活
-
-- 免费试用 **7 天**，第一次运行时开始计时。
-- 到期后在客户端“设置 → 授权”点“复制申请信息”（或在终端运行 `rv license`），
-  作为邮件正文发到 **155570@qq.com**，主题随意。系统会自动回信发激活码。
-- 把激活码粘贴到同一页面（或运行 `rv license activate <激活码>`）即可。激活不需要联网，有效期从首次激活时开始算。
-
-## 常用命令
-
-```
-rv status            本机状态
-rv console           打开客户端
-rv license           试用与激活
-rv service status    后台服务状态
-```
-
-## 隐私
-
-RelVectors 只读取机器状态（读数、容量、温度、版本、硬件型号）。文档、文件名、对话、邮件等个人内容，
-只在你交办的任务里、经你授权时才读取，默认不发往云端模型。
+Free 7-day trial · Windows, macOS and Linux · works offline with a local AI model · your files stay on your computer
 
 ---
 
-RelVectors 为专有软件。本仓库只提供安装包下载。安装包内置的 smartctl 来自 smartmontools（GPL），其许可证随包附带。
-问题与授权：155570@qq.com
+## Why RelVectors
+
+- **It does the work, not just the talking.** Say "clean up my disk" and it scans, shows you a checklist, and frees the
+  space after one click. You get the before-and-after numbers, not a list of instructions.
+- **It knows your computer.** It measures your machine all the time and compares it with its own history, so it can tell
+  "slower than usual" or "hotter than usual", not just "high".
+- **You stay in control.** Anything that changes your computer is explained first. Anything that cannot be undone needs
+  your approval, with one click on a card. You can quit RelVectors at any time.
+- **Private by design.** It reads your computer's state, not your documents. Personal files are only touched in tasks you
+  give it, and are never sent to a cloud AI by default. It works fully offline with a local model.
+- **Light.** It runs quietly in the background with very little CPU and memory, and slows down even more when all is well.
+
+---
+
+## Six features
+
+### 1. Rejuvenate: clean up your computer and make it fast again
+*Disk cleanup · free up disk space · speed up PC · junk file cleaner · Mac cleaner*
+
+- One scan finds what really takes your disk space: app caches, the Trash or Recycle Bin, old installers (DMG, ZIP, EXE),
+  large downloads, virtual machines, local AI models, and app data such as WeChat.
+- You get a **cleanup checklist** with sizes. Safe items (caches) are pre-ticked. One click on "Clean selected" does it all.
+- Caches are deleted (apps rebuild them when needed); everything else goes to the Trash, so you can still get it back.
+- Then it finds the programs slowing your computer down and the software that can be updated, and measures disk speed
+  against your computer's earliest result.
+- **It is not a reinstall and not a factory reset.** Your files, settings and software stay exactly where they are.
+
+**Benefit:** gigabytes of free space and a faster computer in minutes, without the risk of deleting something important.
+
+### 2. Longevity: keep your computer cool so it lasts longer
+*Computer overheating · CPU temperature monitor · laptop running hot · fan noise · hardware health*
+
+- Watches processor and disk temperatures and how hot your computer runs, and compares them with what is normal for
+  this machine.
+- Finds **which programs are heating your computer up** right now.
+- When it runs hot, tells you why and what to do: close or limit the hot programs, improve airflow, clean the dust.
+- Follows disk health (SMART) and temperature over weeks, so wear shows up before it becomes a failure.
+
+**Benefit:** heat is what wears hardware out most. Keeping it cool means fewer crashes, a quieter fan and a longer life.
+
+### 3. Full Potential: find out what your computer can really do
+*PC benchmark · disk speed test · CPU stress test · run AI locally · local LLM*
+
+- Measures real disk read/write speed and processor performance, and runs a stress test (up to a 4-hour burn-in) while
+  watching temperature and stability.
+- Finds the bottleneck: disk, processor, memory or heat.
+- If you have enough memory, it can set up a local AI model (Ollama) so idle computing power does useful work.
+
+**Benefit:** know whether your computer performs as it should, and get more out of the hardware you already paid for.
+
+### 4. Hidden Treasure: find resources you did not know you had
+*Find large files · what is taking up disk space · storage analyzer · idle resources*
+
+- Shows where your disk space went, the largest folders (only when you ask), software updates waiting, and how much of
+  your processor and memory sits idle.
+
+**Benefit:** reclaim space and capacity before you think about buying a new disk or a new computer.
+
+### 5. Remote Trips: get things done on other computers
+*Remote computer maintenance · manage multiple computers · SSH health check · AI agents working together*
+
+- Pair your computers with a one-time invitation code, then check another computer's health, run a remote checkup, or hand
+  it a task. Each computer follows its own owner's rules.
+- Check servers over SSH with the keys you already have (read-only checks run at once; changes need your approval).
+- Hand a job to another AI agent (Claude Code, Codex and others, through the RelVectors plugin) and bring the answer back.
+
+**Benefit:** look after the family PC, the office computers or your servers from one place.
+
+### 6. Guardian: catch unsafe programs and settings
+*Suspicious processes · malware check · crypto miner detection · open ports · firewall check · security check*
+
+- Checks every running program for warning signs: started from a temporary or download folder, its file deleted while it
+  keeps running, ports open to the network, an unknown program keeping the processor busy (a possible crypto miner),
+  administrator programs in folders anyone can change.
+- Then checks the firewall, disk encryption, security updates and backups.
+- Read-only: it never ends a process on its own. For anything suspicious you get what it is, where it is, and what to do.
+
+**Benefit:** a quick, plain-language security check-up, without installing a heavy antivirus suite.
+
+---
+
+## Also included
+
+- **Chat with your computer.** Ask "How is my computer doing?", "Why is it slow?" or "How much disk space is left?" and get
+  answers from real measurements, not guesses.
+- **Edge + cloud AI.** Uses a local model first (Ollama, oMLX, LM Studio); add a cloud model (OpenAI, Claude, Gemini,
+  DeepSeek, Qwen and more) if you want, with a daily budget. Personal content stays local by default.
+- **24/7 health monitoring.** Disk space, memory, temperature, network, disk health, security and backups. A problem is
+  measured twice before you are told, so false alarms do not bother you.
+- **Approval cards.** Anything that cannot be undone pops up as a card: approve or refuse with one click.
+- **Dashboard.** A live overview of your computer, with dark and light themes.
+- **For AI agents.** Claude Code, Codex and other agents can use RelVectors through MCP to look after the computer they run on.
+
+---
+
+## Download
+
+Get the package for your system under **[Releases](https://github.com/myt98644-cyber/relvectors-releases/releases)**.
+English packages end in **`-en`**:
+
+| System | File |
+|---|---|
+| Windows 10 / 11 (64-bit) | `RelVectors-<version>-windows-x64-en.zip` |
+| Windows on ARM | `RelVectors-<version>-windows-arm64-en.zip` |
+| macOS (Apple silicon: M1, M2, M3, M4) | `RelVectors-<version>-mac-arm64-en.tar.gz` |
+| macOS (Intel) | `RelVectors-<version>-mac-x64-en.tar.gz` |
+| Linux (x86_64) | `RelVectors-<version>-linux-x64-en.tar.gz` |
+| Linux (ARM64) | `RelVectors-<version>-linux-arm64-en.tar.gz` |
+
+Everything is included: **no Python or other software to install**, and installing needs no internet.
+Requirements: Windows 10 or later; macOS 11 or later; Linux with glibc 2.28 or later (Ubuntu 20.04+, Debian 10+, RHEL / Rocky 8+).
+`SHA256SUMS.txt` lets you check the downloads.
+
+## Install
+
+- **Windows:** unzip, then double-click `install.cmd`. If Windows says it protected your PC, click "More info → Run anyway".
+- **macOS:** unpack, then right-click `Install.command` → Open (the first time needs a right-click because the app is not yet
+  notarized by Apple), or run `sh install.sh` in Terminal.
+- **Linux:** unpack, then run `sh install.sh` in a terminal.
+
+A **RelVectors** icon appears on your desktop and in the Start menu, Launchpad or app menu. Click it to open RelVectors in your
+browser. To quit, click "Quit" at the top right; it starts again at your next login or when you click the icon.
+
+## Free trial and activation
+
+- **7 days free**, counting from the first start.
+- Then open Settings → License, click "Copy application", and email it to **155570@qq.com** (any subject).
+  An activation code comes back by email automatically.
+- Paste the code on the same page. Activation works offline, and the term starts when you first activate.
+
+## Questions
+
+**Will it delete my files?** Only what you tick in the cleanup list. Caches are deleted (apps rebuild them); everything else
+goes to the Trash, where you can restore it.
+
+**Does it upload my data?** No. It reads your computer's state on your computer. Your documents are only read in tasks you
+give it, and are not sent to a cloud AI unless you allow it.
+
+**Does it need the internet or an AI subscription?** No. It works offline with a free local AI model; a cloud model is optional.
+
+**Will it slow my computer down?** No. It runs at low priority with very little CPU and memory.
+
+**Is "Rejuvenate" a factory reset?** No. It cleans up and speeds up; nothing is reinstalled and nothing is reset.
+
+---
+
+RelVectors is proprietary software; this repository hosts the installers only. The bundled smartctl comes from
+smartmontools (GPL); its license is included in the packages. Questions and licenses: 155570@qq.com
+
+*Keywords: AI computer assistant, PC maintenance, Mac maintenance, disk cleanup, free up disk space, speed up computer,
+computer overheating, CPU temperature, hardware health, SMART disk health, suspicious process scanner, security check,
+remote computer maintenance, local AI, Ollama, AI agent, MCP, Windows, macOS, Linux.*
