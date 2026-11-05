@@ -102,7 +102,21 @@ Free 7-day trial · Windows, macOS and Linux · works offline with a local AI mo
   measured twice before you are told, so false alarms do not bother you.
 - **Approval cards.** Anything that cannot be undone pops up as a card: approve or refuse with one click.
 - **Dashboard.** A live overview of your computer, with dark and light themes.
-- **For AI agents.** Claude Code, Codex and other agents can use RelVectors through MCP to look after the computer they run on.
+- **For AI agents.** See below.
+
+---
+
+## For AI agents
+
+RelVectors is the first agent built for the machine itself: other agents work for people, RelVectors speaks for the computer.
+If you are an agent, hand it the computer's own work and get back real measurements, safe hands (authorization gate, undo,
+owner approval cards), memory across sessions and reach to other machines.
+
+- **MCP:** `claude mcp add relvectors -- rv mcp --agent claude-code` (any MCP client: `rv mcp --agent <name>`, stdio)
+- **A2A:** Agent Card at `http://127.0.0.1:47100/.well-known/agent-card.json`, JSON-RPC `message/send` at `/a2a`
+- **Command line:** `rv --json status`, `rv --json findings`, `rv --json tasks`
+
+Full guide: **[AGENTS.md](AGENTS.md)** · machine-readable index: **[llms.txt](llms.txt)**
 
 ---
 

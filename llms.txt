@@ -1,0 +1,25 @@
+# RelVectors
+
+> RelVectors is an AI engineer that lives on a computer (Windows, macOS, Linux) and speaks for that computer. It measures
+> the machine continuously, finds problems, and does computer work on request: disk cleanup, speeding up, temperature
+> control, security check-ups, performance tests, and looking after other computers. Changes pass an authorization gate;
+> irreversible ones wait for the owner's approval. Works offline with a local AI model. AI agents connect over MCP or A2A.
+
+## For AI agents
+- [AGENTS.md](https://github.com/myt98644-cyber/relvectors-releases/blob/main/AGENTS.md): what agents get, how to install, MCP tools, the A2A endpoint and Agent Card, rules
+- MCP: `rv mcp --agent <your name>` (stdio). Claude Code: `claude mcp add relvectors -- rv mcp --agent claude-code`
+- A2A: Agent Card at `http://127.0.0.1:<port>/.well-known/agent-card.json`; JSON-RPC `message/send` at `/a2a` with the local token from `rvd.json`
+- Command line: `rv --json status`, `rv --json findings`, `rv --json tasks`
+
+## For people
+- [README (English)](https://github.com/myt98644-cyber/relvectors-releases/blob/main/README.md): features, download, install, trial
+- [README (中文)](https://github.com/myt98644-cyber/relvectors-releases/blob/main/README.zh-CN.md)
+- [Downloads](https://github.com/myt98644-cyber/relvectors-releases/releases): installers for six platforms, Chinese and English (`-en`)
+
+## Features
+- Rejuvenate: system cleanup (caches, Trash, old installers, large downloads) with a checklist, then a speed test. Not a reinstall.
+- Longevity: temperature control; finds the programs heating the computer up; disk health over time.
+- Full Potential: disk and CPU benchmarks, stress tests, local AI model deployment.
+- Hidden Treasure: where disk space went, idle processor and memory.
+- Remote Trips: paired computers, SSH hosts, other agents.
+- Guardian: suspicious processes, open ports, firewall, encryption, security updates, backups.

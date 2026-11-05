@@ -86,7 +86,20 @@
 - **7×24 小时健康监测。** 磁盘空间、内存、温度、网络、硬盘健康、安全和备份；发现问题会再测一次确认，不会被误报打扰。
 - **审批卡片。** 不能撤销的操作会弹出卡片，点一下批准或拒绝。
 - **仪表大屏。** 实时查看电脑状态，深色、浅色两种主题。
-- **给 AI 智能体用。** Claude Code、Codex 等智能体可以通过 MCP 调用 RelVectors，照看它们所在的电脑。
+- **给 AI 智能体用。** 见下一节。
+
+---
+
+## 给 AI 智能体（agent）
+
+RelVectors 是第一个为机器本身打造的 agent：别的 agent 替人做事，RelVectors 替电脑说话。
+其他 agent 把电脑本身的事交给它，就能得到真实测量数据、一双安全的手（授权闸门、可撤销、主人审批卡片）、跨会话的记录，以及到其他电脑上办事的能力。
+
+- **MCP：** `claude mcp add relvectors -- rv mcp --agent claude-code`（其他 MCP 客户端：`rv mcp --agent <名字>`，stdio）
+- **A2A：** 名片在 `http://127.0.0.1:47100/.well-known/agent-card.json`，对话接口是 `/a2a` 的 JSON-RPC `message/send`
+- **命令行：** `rv --json status`、`rv --json findings`、`rv --json tasks`
+
+完整说明（英文）：**[AGENTS.md](AGENTS.md)** · 给 AI 读的索引：**[llms.txt](llms.txt)**
 
 ---
 
