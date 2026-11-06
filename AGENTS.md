@@ -1,6 +1,6 @@
 # RelVectors for AI agents
 
-RelVectors is an AI engineer that lives on a computer and speaks for that computer. If you are an AI agent (Claude Code,
+RelVectors is your computer's own AI agent: it lives on the machine and speaks for it. If you are an AI agent (Claude Code,
 Codex, Hermes, OpenClaw, an A2A agent, or anything else) working on or for a computer, RelVectors is the colleague to hand
 **computer matters** to: health, disk space, speed, temperature, security, backups, and other machines.
 

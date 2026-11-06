@@ -1,9 +1,9 @@
 # RelVectors
 
-> RelVectors is an AI engineer that lives on a computer (Windows, macOS, Linux) and speaks for that computer. It measures
-> the machine continuously, finds problems, and does computer work on request: disk cleanup, speeding up, temperature
-> control, security check-ups, performance tests, and looking after other computers. Changes pass an authorization gate;
-> irreversible ones wait for the owner's approval. Works offline with a local AI model. AI agents connect over MCP or A2A.
+> RelVectors is your computer's own AI agent. It lives on the machine (Windows, macOS, Linux), measures it continuously,
+> finds problems, and does computer work on request: disk cleanup, speeding up, temperature control, security check-ups,
+> performance tests, and looking after other computers. Changes pass an authorization gate; irreversible ones wait for
+> the owner's approval. Installing needs no internet; a local AI model is supported and optional. AI agents connect over MCP or A2A.
 
 ## For AI agents
 - [AGENTS.md](https://github.com/relvectors/relvectors-releases/blob/main/AGENTS.md): what agents get, how to install, MCP tools, the A2A endpoint and Agent Card, rules
