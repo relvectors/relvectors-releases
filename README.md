@@ -31,9 +31,9 @@ Supports Windows, macOS and Linux. Free 7-day trial.
 
 | Version | Details | Download |
 |---|---|---|
-| **Windows** | 64-bit Intel / AMD · English v0.3.1 | **[Download →](https://github.com/relvectors/relvectors-releases/releases/download/v0.3.1/RelVectors-0.3.1-windows-x64-en.zip)** |
-| **Mac** | Apple silicon (M1 / M2 / M3 / M4) · English v0.3.1 | **[Download →](https://github.com/relvectors/relvectors-releases/releases/download/v0.3.1/RelVectors-0.3.1-mac-arm64-en.tar.gz)** |
-| **Other systems & Chinese** | Windows on ARM, Intel Mac, Linux, Chinese installers | **[See all packages →](https://github.com/relvectors/relvectors-releases/releases/tag/v0.3.1)** |
+| **Windows** | 64-bit Intel / AMD · v0.3.2 (10 languages) | **[Download →](https://github.com/relvectors/relvectors-releases/releases/download/v0.3.2/RelVectors-0.3.2-windows-x64.zip)** |
+| **Mac** | Apple silicon (M1 / M2 / M3 / M4) · v0.3.2 (10 languages) | **[Download →](https://github.com/relvectors/relvectors-releases/releases/download/v0.3.2/RelVectors-0.3.2-mac-arm64.tar.gz)** |
+| **Other systems** | Windows on ARM, Intel Mac, Linux | **[See all packages →](https://github.com/relvectors/relvectors-releases/releases/tag/v0.3.2)** |
 
 The installer bundles everything it needs: **no Python or other software to install, and the install itself needs no internet.**
 
