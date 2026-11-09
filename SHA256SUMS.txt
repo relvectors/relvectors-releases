@@ -1,6 +1,6 @@
-0efed0f20c814896153df1a12a9efa81842327b45113872c673fd31ef6fda92f  RelVectors-0.3.3-linux-arm64.tar.gz
-4bda4335e7b1fa1d74c360f47e70ac531e1d2f56d51479b6aa82b02a98e7ee40  RelVectors-0.3.3-linux-x64.tar.gz
-e73d562b2468a473b271bf1628c38bfd6e302a1ad0d45c4b29b952e90be25aed  RelVectors-0.3.3-mac-arm64.tar.gz
-10d1dbe5b2e66d6859e734302f6a9c72f231f4cd48582d7b84ccef3f4b9c77f9  RelVectors-0.3.3-mac-x64.tar.gz
-f61ae1d51788ded6cf51ac3fde1dcd9aeab43839018cee354f0708e0c598d4db  RelVectors-0.3.3-windows-arm64.zip
-5b9951ac9a73dbde452a3065032177b8f90341309d22adcb163d1755596a4281  RelVectors-0.3.3-windows-x64.zip
+b0ea650293244ce79c92205340ad861c0ee47377dfa2e53dc7141fa66481a6e7  RelVectors-0.3.5-linux-arm64.tar.gz
+b3a250fed2bea6a47c536441550e66e221feb1e1ddf1c6e8f4d424098987f01d  RelVectors-0.3.5-linux-x64.tar.gz
+ab9ed53a19a53a28d3d1ef454a56cf5d1bdb2652170bb0049734acdfbaf7ee0d  RelVectors-0.3.5-mac-arm64.tar.gz
+4c943d84787d2dde9ecdcf03e686cb9859cf1a008114bf03afdc34fa74c334a4  RelVectors-0.3.5-mac-x64.tar.gz
+5b73498392d7f39ad6493341918755910ea981c053d87a0935d4c63dcc507181  RelVectors-0.3.5-windows-arm64.zip
+d777d38fffd1c7a02ba19d9252a9b0153bd7a3f2bcda018eb8223f4aeb3af336  RelVectors-0.3.5-windows-x64.zip

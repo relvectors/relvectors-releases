@@ -31,9 +31,9 @@ RelVectors 是运行在个人电脑上的智能体。它了解这台电脑的状
 
 | 版本 | 说明 | 下载 |
 |---|---|---|
-| **Windows 电脑版** | 64 位 Intel / AMD 电脑 · v0.3.3（含十种语言） | **[下载 →](https://github.com/relvectors/relvectors-releases/releases/download/v0.3.3/RelVectors-0.3.3-windows-x64.zip)** |
-| **Mac 电脑版** | Apple Silicon（M1 / M2 / M3 / M4）· v0.3.3（含十种语言） | **[下载 →](https://github.com/relvectors/relvectors-releases/releases/download/v0.3.3/RelVectors-0.3.3-mac-arm64.tar.gz)** |
-| **其他电脑** | Windows ARM、Intel Mac、Linux | **[查看全部安装包 →](https://github.com/relvectors/relvectors-releases/releases/tag/v0.3.3)** |
+| **Windows 电脑版** | 64 位 Intel / AMD 电脑 · v0.3.5（含十种语言） | **[下载 →](https://github.com/relvectors/relvectors-releases/releases/download/v0.3.5/RelVectors-0.3.5-windows-x64.zip)** |
+| **Mac 电脑版** | Apple Silicon（M1 / M2 / M3 / M4）· v0.3.5（含十种语言） | **[下载 →](https://github.com/relvectors/relvectors-releases/releases/download/v0.3.5/RelVectors-0.3.5-mac-arm64.tar.gz)** |
+| **其他电脑** | Windows ARM、Intel Mac、Linux | **[查看全部安装包 →](https://github.com/relvectors/relvectors-releases/releases/tag/v0.3.5)** |
 
 安装包已包含所需运行环境：**不需要另装 Python 或其他软件，安装过程不需要联网。**
 
